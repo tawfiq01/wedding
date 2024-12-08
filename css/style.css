@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(147, 147, 147, 0.5);
+  background: rgba(21, 21, 21, 0.66);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -831,7 +831,7 @@ form label {
 }
 .fh5co-cover .display-tc img{
   height: 100px;
-  width: 80px;
+  width: 100px;
   margin-top: 36px;
 }
 
@@ -885,11 +885,6 @@ form label {
   .fh5co-cover .display-tc h1 {
     font-size: 30px;
   }
-  #fh5co-header .display-tc,
-  #fh5co-counter .display-tc,
-  .fh5co-cover .display-tc {
-    padding-top: 36px;
-  }
 }
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
@@ -904,9 +899,6 @@ form label {
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
     font-size: 16px;
-  }
-  #fh5co-header .display-tc h1.name {
-    margin: 3rem 0 !important;
   }
 
 }
@@ -1838,6 +1830,8 @@ form label {
   position: absolute;
   bottom: 0;
   z-index: 10000;
+  transform: scale(.3);
+  background-color: #46b8da;
 }
 .music button{
   background:transparent;
