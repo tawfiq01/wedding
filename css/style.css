@@ -1827,21 +1827,43 @@ form label {
 /*# sourceMappingURL=style.css.map */
 
 .music{
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  top: 0px;
   z-index: 10000;
   transform: scale(.3);
-  background-color: #46b8da;
+  width: 120px;
+  height: 120px;
+  left: -16px;
 }
+
+
 .music button{
   background:transparent;
   border:unset;
 }
-
+.stop{
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  top: -17px;
+  left: -7px;
+}
+.stop img{
+  width: 100%;
+  height: 100%;
+}
+.playing .stop {
+  display: none;
+}
 .w {
   width: 140px;
   height: 120px;
   display:flex;
+  position: absolute;
+  
+}
+.playing .w {
+  animation: music infinite 1s both;  
 }
 .a{
   height:120px;
@@ -1849,12 +1871,28 @@ form label {
   margin-right:20px;
   position:relative;
 }
-.a > div {
+.playing .a > div {
   background:#FE5F55;
   position:absolute;
+  transition: all .2s ease-in-out;
+  animation: none;
+}
+.playing .a1 > div {
+  background:#FE5F55;
+  transition: all .2s ease-in-out;
+  animation: none;
+}
+
+.a > div {
+  background:#745250;
+  position:absolute;
+  transition: all .2s ease-in-out;
+  animation: musicColor infinite 1s both;
 }
 .a1 > div {
-  background:#A64942;
+  background:#745250;
+  transition: all .2s ease-in-out;
+  animation: musicColor infinite 1s both;
 }
 .b{
   height:100px;
@@ -1879,4 +1917,21 @@ form label {
 }
 .d2{
   top:20px
+}
+
+@keyframes music{
+  0%,100%{
+  transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+}
+@keyframes musicColor{
+  0%,100%{
+    background:#745250;
+  }
+  50%{
+    background:#FE5F55;
+  }
 }
