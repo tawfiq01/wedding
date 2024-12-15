@@ -1857,53 +1857,55 @@ form label {
   display: none;
 }
 .w {
-  width: 140px;
-  height: 120px;
+  width: 120px;
+  height: 100px;
   display:flex;
   position: absolute;
-  
+  margin-left: 8px;
+  margin-top: 5px;
+
 }
 .playing .w {
   animation: music infinite 1s both;  
 }
 .a{
-  height:120px;
-  width:50px;
+  height:100px;
+  width:40px;
   margin-right:20px;
   position:relative;
 }
 .playing .a > div {
-  background:#FE5F55;
+  background:#c7c1c1;
   position:absolute;
   transition: all .2s ease-in-out;
   animation: none;
 }
 .playing .a1 > div {
-  background:#FE5F55;
+  background:#c7c1c1;
   transition: all .2s ease-in-out;
   animation: none;
 }
 
 .a > div {
-  background:#745250;
+  background:#706b6b;
   position:absolute;
   transition: all .2s ease-in-out;
   animation: musicColor infinite 1s both;
 }
 .a1 > div {
-  background:#745250;
+  background:#807878;
   transition: all .2s ease-in-out;
   animation: musicColor infinite 1s both;
 }
 .b{
-  height:100px;
+  height:88px;
   width:10px;
   position:absolute;
   right:0;
 }
 .c{
-  height:40px;
-  width:50px;
+  height:30px;
+  width:40px;
   border-radius:50%;
   bottom:0;
   position:absolute;
@@ -1925,14 +1927,34 @@ form label {
   transform: scale(1);
   }
   50%{
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 @keyframes musicColor{
   0%,100%{
-    background:#745250;
+    background:#807c7b;
   }
   50%{
-    background:#FE5F55;
+    background:#c7c1c1;
   }
+}
+
+
+.details {
+  /* text-align: center; */
+  text-align: center;
+  padding: 4rem .5rem 2.8rem;
+}
+.details h2{
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Amsterdam", Arial, serif;
+  color:#646464;
+
+}
+.details p{
+  padding-top: 1rem;
+}
+.details span {
+  font-family: monospace, serif;
 }
