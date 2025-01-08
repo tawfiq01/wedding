@@ -404,6 +404,11 @@ h1, h2, h3, h4, h5, h6, figure {
     height: inherit;
   }
 }
+
+.event-container{
+  display: flex;
+  gap: 1rem;
+}
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
   border: 2px solid rgba(0, 0, 0, 0.5);
@@ -420,7 +425,12 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-event .event-wrap {
     margin-bottom: 10px;
   }
+  .event-container{
+    flex-direction: column;
+    
+  }
 }
+
 #fh5co-counter .event-wrap h3,
 #fh5co-event .event-wrap h3 {
   font-size: 14px;
